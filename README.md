@@ -7,9 +7,17 @@ You can use them just saving as bookmark in your browser and then pressing on it
 
 There is a simple html page you can try:
 
-- load the `test_page.html`
+- load the [test_page.html](https://rawgithub.com/kidpixo/bookmarklets/master/test_page.html)**
 - use the bookmarlet
 
-As result you will get a new window listing all the useful links, the `test_page.html` contains actually some `ed2k` links for testing.
+The new version of the bookmarklet works without PopUp window, it refreshes the actual page and leaves only the ed2k links as text one per line. You can copy it and feed it e/amule directly.
+
+![](https://dl.dropboxusercontent.com/u/4762299/github_img/bookmarklets/new_example.png)
+
+The PoPUp bookmarlet gives you ad result a new window listing all the ed2k links. 
+
+The `test_page.html` contains actually some `ed2k` links for testing.
 
 ![](https://dl.dropboxusercontent.com/u/4762299/github_img/bookmarklets/example.png)
+
+** thanks to @yaypie for the service [https://rawgithub.com/](https://rawgithub.com/)

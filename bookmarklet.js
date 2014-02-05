@@ -1,9 +1,35 @@
 // On chrome they work as they are.
-// If it doesn't work for your browser, dont forget to use 
+// If it doesn't work for your browser, maybe could help to use:
 // - An URI encoder > http://meyerweb.com/eric/tools/dencoder/ and 
 // - The bookmarkleter > http://chriszarate.github.io/bookmarkleter/
 
-// ddunlimited
+// ddunlimited No PopUP
+//this erase the window and leaves only the ed2k links
+// use this http://stackoverflow.com/a/2455480/1435167
+
+javascript:(function(){
+  if(frames.length>1){alert('Sorry, frames detected.');}
+  else
+  {
+    lnks = document.body.getElementsByTagName('a');
+    filtered_lnks = '';
+    with(document)
+    {
+        for(var i=0;i<lnks.length;i++)
+        {
+            if (lnks[i].href.indexOf('ed2k://') != -1)
+            { filtered_lnks=filtered_lnks+'<div>'+lnks[i].href+'</div>'; }
+        }
+    }
+    document.head.innerHTML = '';
+    document.body.innerHTML  = filtered_lnks;
+  }
+})
+()
+
+
+
+// ddunlimited with PopUP
 
 javascript:(function(){
 if(frames.length>1)
